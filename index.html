@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshema General Healthcare - Contact Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a6fc4 0%, #0d4d8c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-section {
+            padding: 40px;
+        }
+        
+        .section-title {
+            color: #1a6fc4;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #1a6fc4;
+            border-radius: 3px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-card {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 25px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e1e8f0;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-type {
+            font-size: 1.2rem;
+            color: #1a6fc4;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .phone-number {
+            font-size: 1.4rem;
+            color: #0d4d8c;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .country {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        
+        .additional-info {
+            background: #f0f7ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .info-title {
+            color: #1a6fc4;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .info-text {
+            color: #475569;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-card {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            header {
+                padding: 20px;
+            }
+            
+            .contact-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Kshema General Healthcare</div>
+            <div class="tagline">Your Health, Our Priority</div>
+        </header>
+        
+        <section class="contact-section">
+            <h2 class="section-title">Customer Care Contact</h2>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-type">Customer Care Number</div>
+                    <div class="phone-number">+91 90007 77422</div>
+                    <div class="country">For Nn India</div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-type">Customer Care Number</div>
+                    <div class="phone-number">+91 88850 24348</div>
+                    <div class="country">For Rd India</div>
+                </div>
+            </div>
+            
+            <div class="additional-info">
+                <div class="info-title">Service Hours</div>
+                <div class="info-text">
+                    Our customer care team is available Monday to Saturday, from 9:00 AM to 6:00 PM IST. 
+                    For emergency medical assistance, please visit the nearest hospital or call emergency services.
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 Kshema General Healthcare. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
